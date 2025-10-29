@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lone Starfish</title>
+    <!-- Linking my external CSS file -->
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <!-- Main container for the whole page content -->
+    <div class="container">
+
+```
+    <!-- Header section with a banner image and title -->
+    <header class="site-header">
+        <img src="./images/lone-starfish-wide.jpg" alt="Starfish on sand" class="header-img">
+        <h1 class="site-title">Lone Starfish</h1>
+    </header>
+
+    <!-- Simple navigation bar -->
+    <nav>
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">STORY</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main content of the page -->
+    <main>
+        <!-- Article section talking about starfish -->
+        <article>
+            <h2>Life of a Starfish</h2>
+            <img src="./images/lone-starfish.jpg" alt="Starfish" class="starfish-img">
+            <p>
+                Bright starfish, resting, alone. Waves, sand, shells. Ocean, sunlight, movement. Gentle creature, peaceful, beautiful! Five arms, slow, graceful, unique. Starfish, living, thriving, adapting. 
+            </p>
+            <p>
+                Coral, reef, habitat! Fish, crab, snail, shrimp! Seaweed, rocks, water, current. Seaweed, rocks, water, current.
+            </p>
+            <p>
+                Tidepool, peaceful! Predator, prey, survival. Seaweed, rocks, water, current.
+            </p>
+        </article>
+
+        <!-- Fun facts about starfish -->
+        <section class="facts">
+            <h3>Facts About Starfish</h3>
+            <ul>
+                <li>Phylum: Echinodermata</li>
+                <li>Usually five arms</li>
+                <li>No brain or blood</li>
+                <li>Can regrow arms</li>
+            </ul>
+        </section>
+
+        <!-- Contact form section -->
+        <section class="contact-form">
+            <h3>Contact to learn more</h3>
+            <!-- Form for user info and message -->
+            <form method="post" action="#">
+                <!-- Name input -->
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <!-- Email input -->
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <!-- Message box -->
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+
+                <!-- Radio buttons asking if they want to visit -->
+                <fieldset>
+                    <legend>Visit the starfish?</legend>
+                    <label><input type="radio" name="visit" value="yes"> Yes</label>
+                    <label><input type="radio" name="visit" value="no"> No</label>
+                    <label><input type="radio" name="visit" value="maybe"> Maybe</label>
+                </fieldset>
+
+                <!-- Submit button -->
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer at the bottom of the page -->
+    <footer>
+        &copy; 2025 Lone Starfish. All rights reserved.
+    </footer>
+</div>
+```
+
+</body>
+</html>
