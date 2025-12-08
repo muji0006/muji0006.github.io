@@ -3,162 +3,178 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Final-project</title>
+    <link rel="stylesheet" href="./main.css">
+    <title>The Katok Creative Hub </title>
+    <script src="https://kit.fontawesome.com/eab258384f.js" crossorigin="anonymous"></script>
 </head>
-<body>
+
+ <body>
     <!-- HEADER SECTION -->
     <header>
+        <div class="company-logo">
+            <img src="./images/logo.png" alt="The Katok Creative Hub Logo">
+        </div>
         <nav>
-            <div class="Katok-logo">
-                <img src="./images/logo.png" alt="Katok Creative Hub Logo">
-            </div>
-            <ul class="Katok-nav">
+            <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About Us</a></li>
                 <li><a href="#services">Services</a></li>
-                <li><a href="#team"> Team</a></li>
+                <li><a href="#team">Team</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            <div class="Katok-search">
-                <input type="text" placeholder="Search">
-                <button>🔍</button>
-            </div>
+            <form class="search-form">
+                <label for="search">Search</label>
+                <input type="text" placeholder="search" id="search"> 
+                <button><i class="fa-sharp fa-solid fa-magnifying-glass"></i></button>
+            </form>
         </nav>
     </header>
 
-    <!-- HERO SECTION -->
-    <section id="home" class="Katok-hero">
-        <img src="./images/main-banner.jpg" alt="Banner Image"> 
-        <h1>Welcome to Katok Creative Hub</h1>
-        <p>At Katok Creative Hub, we are committed to delivering precise, functional, and innovative creative solutions that exceed industry standards.</p>
-        <p>From dynamic websites to impactful marketing strategies and compelling video content, our team works with dedication to transform your ideas into outstanding results. Together, let’s build something remarkable.</p>
-        <button>Connect with Us</button>
-    </section>
+    <main>
+        <section class="main-banner" id="home">
+            <img src="./images/main-banner.jpg" alt="Welcome to The Katok Creative Hub">
+            <h1>Welcome to The Katok Creative Hub</h1>
+            <p>Where creativity meets innovation and transforms your vision into reality...</p>
+            <a href="#contact">Connect with us <i class="fa-solid fa-caret-right"></i></a>
+            <div class="banner-overlay"></div>
+        </section>
 
-    <!-- ABOUT US SECTION -->
-    <section id="about">
-        <h2>About Us</h2>
-        <img src="./images/about-us.jpg" alt="About Us Image">
-        <p>Katok Creative Hub is a collective of passionate professionals focused on turning bold ideas into meaningful digital experiences. We empower businesses by crafting strong brands, engaging visuals, and innovative solutions tailored to their needs.</p>
-        <p>Our mission is to help your brand communicate with purpose and reach the right audience effectively. From web design and digital marketing to print materials, we provide strategic and creative services built for long-term success.</p>
-        <p>Partner with us and bring your vision to life through exceptional and impactful work.</p>
-    </section>
+        <!-- ABOUT US SECTION -->
+        <section id="about">
+            <img src="images/about-us.jpg" alt="About The Katok Creative Hub">
+            <div>
+                <h2>About Us</h2>
+                <p>The Katok Creative Hub is a premier creative agency dedicated to delivering exceptional digital experiences.</p>
+                <p>Our team of passionate creatives works tirelessly to bring your ideas to life with cutting-edge solutions.</p>
+            </div>
+        </section>
 
-    <!-- SERVICES SECTION -->
-    <section id="services">
-        <h2>Our Services</h2>
+        <!-- SERVICES SECTION -->
+        <section id="services">
+            <h2>Our Services</h2>
 
-        <div class="Katok-service">
-            <img src="./images/digital.jpg" alt="Digital Strategy">
-            <h3>Digital Strategy</h3>
-            <p>We build smart digital strategies that elevate brand visibility and performance. Through audience insights and seamless execution, we deliver measurable and effective results.</p>
-            <button>Digital Plans</button>
-        </div>
+            <div class="service-container digital-solutions">
+                <img src="images/digital.jpg" alt="Digital Transformation">
+                <h3>Digital Transformation</h3>
+                <p>We help businesses thrive in the digital landscape with innovative strategies.</p>
+                <a href="#contact">Digital Plans <i class="fa-solid fa-caret-right"></i></a>
+            </div>
 
-        <div class="Katok-service">
-            <img src="./images/marketing.jpg" alt="Marketing Solutions"> 
-            <h3>Marketing Solutions</h3>
-            <p>Our marketing experts design tailored campaigns that enhance brand awareness, engage audiences, and drive meaningful conversions across platforms.</p>
-            <button>Marketing Plans</button>
-        </div>
+            <div class="service-container brand-strategy">
+                <img src="images/marketing.jpg" alt="Brand Strategy">
+                <h3>Marketing</h3>
+                <p>Strategic branding that defines and elevates your presence in the market.</p>
+                <a href="#contact">Marketing Options <i class="fa-solid fa-caret-right"></i></a>
+            </div>
 
-        <div class="Katok-service">
-            <img src="./images/web.jpg" alt="Web Development"> 
-            <h3>Web Development</h3>
-            <p>We develop modern, responsive, and user-friendly websites that reflect your brand’s identity while ensuring an intuitive and seamless browsing experience.</p>
-            <button>Website Plans</button>
-        </div>
+            <div class="service-container media-production">
+                <img src="images/video.jpg" alt="Media Production">
+                <h3> Video production</h3>
+                <p>Creating captivating media content that tells your story powerfully.</p>
+                <a href="#contact">Production Plans <i class="fa-solid fa-caret-right"></i></a>
+            </div>
 
-        <div class="Katok-service">
-            <img src="./images/video.jpg" alt="Video Production"> 
-            <h3>Video Production</h3>
-            <p>We create engaging, high-quality video content for marketing, storytelling, and brand awareness—covering everything from concept development to final production.</p>
-            <button>Video Plans</button>
-        </div>
+            <div class="service-container development">
+                <img src="images/web.jpg" alt="Web Development">
+                <h3>Web development</h3>
+                <p>Building responsive and engaging websites tailored to your brand.</p>
+                <a href="#contact">Development Packages <i class="fa-solid fa-caret-right"></i></a>
+            </div>
 
-        <div class="Katok-service">
-            <img src="./images/print.jpg" alt="Print Design"> 
-            <h3>Print Design</h3>
-            <p>We produce professional print designs that leave a lasting impression and strengthen brand presence across every touchpoint.</p>
-            <button>Print Plans</button>
-        </div>
+            <div class="service-container design">
+                <img src="images/print.jpg" alt="Graphic Design">
+                <h3>Print</h3>
+                <p>Creative designs that make your brand stand out and resonate.</p>
+                <a href="#contact">Design Services <i class="fa-solid fa-caret-right"></i></a>
+            </div>
+        </section>
 
-    </section>
+        <section class="philosophy">
+            <h2>Our Vision</h2>
+            <img src="./images/vision.jpg" alt="Our Philosophy">
+            <p>Driven by creativity and guided by innovation, we transform concepts into compelling visual journeys.</p>
+            <a href="#contact">Discover More <i class="fa-solid fa-caret-right"></i></a>
+        </section>
 
-    <!-- MISSION SECTION -->
-    <section id="vision">
-        <h2>Our Mission</h2>
-        <img src="./images/vision.jpg" alt="Mission Image"> 
-        <p>Our mission is to blend creativity and technology to deliver memorable brand experiences that inspire and connect with audiences.</p>
-        <button>Learn More</button>
-    </section>
+        <!-- TEAM SECTION -->
+        <section id="team">
+            <h2>Our Team</h2>
 
-    <!-- TEAM SECTION -->
-    <section id="team">
-        <h2>Meet Our Team</h2>
+            <div class="team-member">
+                <img src="images/john.jpg" alt="Alex Morgan">
+                <div class="member-info">
+                    <h3>Bob Riten</h3>
+                    <h4>Creative Director & Founder</h4>
+                    <p>With 12 years in creative direction, Bob leads our vision with innovative thinking.</p>
+                </div>
+            </div>
 
-        <div class="Katok-team-member">
-            <img src="./images/john.jpg" alt="Katok"> 
-            <h3>JOHN</h3>
-            <p>Founder & CEO</p>
-            <p>John leads Katok Creative Hub with a strong vision for innovation and branding excellence. His strategic guidance drives the team to create meaningful and impactful results.</p>
-        </div>
+            <div class="team-member">
+                <img src="images/bob.jpg" alt="Taylor Chen">
+                <div class="member-info">
+                    <h3>John Doe</h3>
+                    <h4>CEO and co-owner</h4>
+                    <p>Taylor ensures our technical implementations are robust and future-ready.</p>
+                </div>
+            </div>
+        </section>
 
-        <div class="Katok-team-member">
-            <img src="./images/bob.jpg" alt="Esther Glory"> 
-            <h3>BOB</h3>
-            <p>Creative Director</p>
-            <p>Bob oversees the creative direction of every project, ensuring designs are not only visually compelling but also aligned with strong storytelling and brand identity.</p>
-        </div>
-    </section>
+        <!-- CONTACT SECTION -->
+        <section id="contact">
+            <h2>Get In Touch</h2>
+            <div class="contact-form">
+                <h3>Send Us a Message</h3>
+                <form>
+                    <label for="contact-name">Full Name</label>
+                    <input type="text" id="contact-name" required>
 
-    <!-- CONTACT SECTION -->
-    <section id="contact">
-        <h1>Contact Us</h1>
-        <h2>Send us a message</h2>
+                    <label for="contact-email">Email</label>
+                    <input type="email" id="contact-email" required>
 
-        <form>
-            <label for="fullname">Full Name</label><br>
-            <input type="text" id="fullname" name="fullname"><br><br>
+                    <label for="contact-message">Message</label>
+                    <textarea id="contact-message" rows="4" required></textarea>
 
-            <label for="email">Email</label><br>
-            <input type="email" id="email" name="email"><br><br>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
 
-            <label for="message">Message</label><br>
-            <textarea id="message" name="message" rows="5" cols="30"></textarea><br><br>
+            <div class="business-hours">
+                <h2>Office Hours</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Day</th>
+                            <th>Hours</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Monday - Friday</td>
+                            <td>9AM - 6PM</td>
+                        </tr>
+                        <tr>
+                            <td>Saturday - Sunday</td>
+                            <td>Closed</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
 
-            <button type="submit">Send</button>
-        </form>
-
-        <!-- GOOGLE MAPS SECTION -->
-        <div class="Katok-office">
-            <h3>Our Office</h3>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345093644!2d144.95373531561693!3d-37.81627974202124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d5df1f0b1f7%3A0xf57783a6c2b4b9a8!2sCreative%20Hub!5e0!3m2!1sen!2sus!4v1617844812345!5m2!1sen!2sus" allowfullscreen></iframe>
-        </div>
-    </section>
-
-    <h2>Hours of Operation</h2>
-
-    <!-- TABLE SECTION -->
-    <table border="1">
-        <tr>
-            <th>Days</th>
-            <th>Hours</th>
-        </tr>
-        <tr>
-            <td>Monday - Friday</td>
-            <td>9 AM - 6 PM</td>
-        </tr>
-        <tr>
-            <td>Saturday - Sunday</td>
-            <td>Closed</td>
-        </tr>
-    </table>
+             <!-- GOOGLE MAPS SECTION -->
+            <div class="studio-location">
+                <h3>Our Studio</h3>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10164.675758308082!2d-75.76414563428425!3d45.35059181325638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20-%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1743555759856!5m2!1sen!2sca"
+                    width="600" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    </main>
 
     <!-- FOOTER SECTION -->
     <footer>
-        <p>&copy; 2025 Katok Creative Hub. All rights reserved.</p>
+        <p>© Copyright The Katok Creative Hub, 2025</p>
+        <p>All images are taken from <a class="image-source" href="https://unsplash.com/">Unsplash</a></p>
     </footer>
-
-</body>
-</html>
+ </body>
+ </html>
